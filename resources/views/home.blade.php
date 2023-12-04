@@ -19,7 +19,7 @@
                 <ion-icon name="person-circle-outline" size='large'></ion-icon>
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
-                <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href=""><ion-icon name="settings-outline" class="me-2"></ion-icon> Account Settings</a></li>
+                <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href="{{ route('account-settings') }}"><ion-icon name="settings-outline" class="me-2"></ion-icon> Account Settings</a></li>
                 <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href=""><ion-icon name="language-outline" class="me-2"></ion-icon> Language</a></li>
             </ul>
         </div>

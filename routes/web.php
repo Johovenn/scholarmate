@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\UpdateProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,4 +36,13 @@ Route::middleware('auth.check')->group(function(){
     Route::get('/home', function(){
         return view('home');
     })->name('home');
+
+    Route::controller(ChangePasswordController::class)->group(function(){
+        Route::get('/change-password', 'index')->name('change-password');
+    });
+    
+    Route::controller(UpdateProfileController::class)->group(function(){
+        Route::get('/account-settings', 'index')->name('account-settings');
+        Route::post('/account-settings', 'update')->name('update-profile');
+    });
 });
