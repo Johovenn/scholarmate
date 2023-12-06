@@ -15,12 +15,14 @@ class UpdateProfileController extends Controller
     public function update(Request $request){
         $validateData = $request->validate([
             'name' => 'required',
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'beasiswa' => 'required',
         ]);
 
         $user = User::where('email', Auth::user()->email)->first();
         $user->name = $validateData['name'];
         $user->email = $validateData['email'];
+        $user->beasiswa = $validateData['beasiswa'];
         $user->save();
         return redirect()->route('home');
     }
