@@ -9,7 +9,7 @@
     @include('includes.icons')
 </head>
 <body class="min-vh-100 bg-dark">
-    <p class="text-light d-flex align-items-center"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back </p>
+    <a href="{{ route('home') }}" class="text-light d-flex align-items-center text-decoration-none fs-3 position-relative top"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back </a>
     <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4">
         <div class="w-25 bg-light h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
             <div class="list-group p-2 w-100">

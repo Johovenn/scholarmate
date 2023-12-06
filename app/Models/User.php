@@ -24,6 +24,7 @@ class User extends Authenticatable implements AuthenticatableContract
         'name',
         'email',
         'password',
+        'beasiswa'
     ];
 
     /**

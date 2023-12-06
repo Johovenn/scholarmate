@@ -15,7 +15,6 @@
                 <a href="" class="list-group-item active">Update Profile</a>
                 <a href="{{ route('change-password') }}" class="list-group-item">Change Password</a>
             </div>
-            @include('includes.logout-button')
         </div>
         <div class="w-75 bg-light p-3 rounded-2">
             <h2>Update Profile</h2>

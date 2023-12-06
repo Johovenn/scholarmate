@@ -15,6 +15,7 @@ class RegisterController extends Controller
     public function register(Request $request){
         $validateData = $request->validate([
             'name' => 'required',
+            'beasiswa' => 'required',
             'email' => 'required|email',
             'password' => 'required|alpha_num|min:8|confirmed',
             'password_confirmation' => 'required'
@@ -28,6 +29,7 @@ class RegisterController extends Controller
         $user->name = $validateData['name'];
         $user->email = $validateData['email'];
         $user->password = $hashedPassword;
+        $user->beasiswa = $validateData['beasiswa'];
         $user->save();
 
         return redirect()->route('home');

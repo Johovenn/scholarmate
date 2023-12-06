@@ -22,6 +22,15 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
+                    <label for="beasiswa" class="form-label">Beasiswa</label>
+                    <select name="beasiswa" id="beasiswa" class="form-control">
+                        <option value="Kuliah" {{ old('beasiswa') == 'Kuliah' ? 'selected' : '' }}>Kuliah</option>
+                        <option value="SMA" {{ old('beasiswa') == 'SMA' ? 'selected' : '' }}>SMA</option>
+                        <option value="SMP" {{ old('beasiswa') == 'SMP' ? 'selected' : '' }}>SMP</option>
+                        <option value="SD" {{ old('beasiswa') == 'SD' ? 'selected' : '' }}>SD</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="text" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}">
                     @error('email')
