@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account Settings</title>
     @include('includes.bootstrap')
+    @include('includes.icons')
 </head>
 <body class="min-vh-100 bg-dark">
     <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4">
@@ -14,10 +15,7 @@
                 <a href="" class="list-group-item active">Update Profile</a>
                 <a href="{{ route('change-password') }}" class="list-group-item">Change Password</a>
             </div>
-            <form action="{{ route('auth.logout') }}" method="POST" class="mb-3">
-                @csrf
-                <button type="submit" class="btn btn-danger">Logout</button>
-            </form>
+            @include('includes.logout-button')
         </div>
         <div class="w-75 bg-light p-3 rounded-2">
             <h2>Update Profile</h2>

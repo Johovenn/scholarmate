@@ -10,7 +10,7 @@
 </head>
 <body class="min-vh-100 d-flex flex-column justify-content-center align-items-center bg-dark">
     <div class="h-200 w-75 rounded d-flex" style="box-shadow : 0px 0px 0px 5px rgba(0, 0, 0, 0.1)">
-        <div class="w-50 d-flex flex-column justify-content-center align-items-center px-5 py-3">
+        <div class="w-50 d-flex flex-column justify-content-center align-items-center px-5 py-3 bg-light rounded">
             <h3>Register</h3>
             <form action="{{ route('auth.saveRegister') }}" class="w-100" method="POST">
                 @csrf

@@ -39,6 +39,7 @@ Route::middleware('auth.check')->group(function(){
 
     Route::controller(ChangePasswordController::class)->group(function(){
         Route::get('/change-password', 'index')->name('change-password');
+        Route::post('/change-password', 'changePassword')->name('update-password');
     });
     
     Route::controller(UpdateProfileController::class)->group(function(){

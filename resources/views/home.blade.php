@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ScholarMate</title>
     @include('includes.bootstrap')
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    @include('includes.icons')
 </head>
 <body class="min-vh-100 d-flex flex-column bg-dark text-light">
     <div class="d-flex container mt-3 justify-content-between w-100">
