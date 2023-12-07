@@ -16,8 +16,17 @@
     }
 </style>
 <body class="min-vh-100 d-flex flex-column">
-    <div class="d-flex container mt-3 justify-content-between align-items-center w-100">
-        <img src="{{ asset('assets/scholarmate.png') }}" width="100px" alt="">
+    <nav class="d-flex px-5 mt-3 justify-content-between align-items-center w-100">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="{{ asset('assets/scholarmate.png') }}" width="100px" alt="">
+            <ul class="d-flex mt-3" style="list-style: none;">
+                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Home</a></li>
+                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SD</a></li>
+                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SMP</a></li>
+                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SMA</a></li>
+                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa Kuliah</a></li>
+            </ul>
+        </div>
         <div class="d-flex align-items-center">
             <div class="me-3">
                 <form class="d-flex" role="search" method="POST" action="">
@@ -35,15 +44,14 @@
                 </ul>
             </div>
         </div>
-    </div>
-    
+    </nav>
     <hr>
 
     <div class="container position-relative">
         <h2 class="mb-3">Welcome, {{ Auth::user()->name }}</h2>
         
         <div class="w-100 d-flex justify-content-center">
-            <div id="carouselExampleCaptions" class="carousel slide mb-3">
+            <div id="carouselExampleCaptions" class="carousel slide mb-5">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -81,10 +89,9 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-    
         </div>
         
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column mb-5">
             <h4>Here are scholarships based on your interest : </h4>
             <div class="d-flex align-items-center">
                 @foreach ($beasiswas as $beasiswa)
@@ -104,6 +111,92 @@
                 </div>
             </div>
         </div>
+
+        <div class="d-flex flex-column mb-5">
+            <h4>Scholarships for Primary School : </h4>
+            <div class="d-flex align-items-center">
+                @foreach ($beasiswaSD as $beasiswa)
+                    <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <div class="card-top">
+                            <h5 class="card-title">{{ $beasiswa->name }}</h5>
+                        </div>
+                        <p class="card-text">{{ $beasiswa->category }}</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
+                        <a href="" class="btn btn-warning">Details</a>
+                    </div>
+                @endforeach
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                    <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+                    <h5>See All</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column mb-5">
+            <h4>Scholarships for Junior High School :</h4>
+            <div class="d-flex align-items-center">
+                @foreach ($beasiswaSMP as $beasiswa)
+                    <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <div class="card-top">
+                            <h5 class="card-title">{{ $beasiswa->name }}</h5>
+                        </div>
+                        <p class="card-text">{{ $beasiswa->category }}</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
+                        <a href="" class="btn btn-warning">Details</a>
+                    </div>
+                @endforeach
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                    <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+                    <h5>See All</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column mb-5">
+            <h4>Scholarships for Senior High School :</h4>
+            <div class="d-flex align-items-center">
+                @foreach ($beasiswaSMA as $beasiswa)
+                    <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <div class="card-top">
+                            <h5 class="card-title">{{ $beasiswa->name }}</h5>
+                        </div>
+                        <p class="card-text">{{ $beasiswa->category }}</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
+                        <a href="" class="btn btn-warning">Details</a>
+                    </div>
+                @endforeach
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                    <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+                    <h5>See All</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column mb-5">
+            <h4>Scholarships for College Students :</h4>
+            <div class="d-flex align-items-center">
+                @foreach ($beasiswaKuliah as $beasiswa)
+                    <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <div class="card-top">
+                            <h5 class="card-title">{{ $beasiswa->name }}</h5>
+                        </div>
+                        <p class="card-text">{{ $beasiswa->category }}</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
+                        <a href="" class="btn btn-warning">Details</a>
+                    </div>
+                @endforeach
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                    <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+                    <h5>See All</h5>
+                </div>
+            </div>
+        </div>
     </div>
+
+    @include('includes.footer')
 </body>
 </html>
