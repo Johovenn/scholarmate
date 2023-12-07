@@ -16,35 +16,7 @@
     }
 </style>
 <body class="min-vh-100 d-flex flex-column">
-    <nav class="d-flex px-5 mt-3 justify-content-between align-items-center w-100">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="{{ asset('assets/scholarmate.png') }}" width="100px" alt="">
-            <ul class="d-flex mt-3" style="list-style: none;">
-                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Home</a></li>
-                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SD</a></li>
-                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SMP</a></li>
-                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa SMA</a></li>
-                <li class="mx-2"><a href="" class="text-decoration-none text-dark">Beasiswa Kuliah</a></li>
-            </ul>
-        </div>
-        <div class="d-flex align-items-center">
-            <div class="me-3">
-                <form class="d-flex" role="search" method="POST" action="">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
-                  </form>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-warning dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                    <ion-icon name="person-circle-outline" size='large'></ion-icon>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href="{{ route('account-settings') }}"><ion-icon name="settings-outline" class="me-2"></ion-icon> Account Settings</a></li>
-                    <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href=""><ion-icon name="language-outline" class="me-2"></ion-icon> Language</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    @include('layout.navbar')
     <hr>
 
     <div class="container position-relative">
@@ -68,7 +40,7 @@
                     <div class="carousel-item">
                         <img src="{{ asset('assets/carousel2.jpg') }}" class="d-block w-100 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Graduate from University of Singapore</h5>
+                            <h5>Graduate from Your Dream University</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
@@ -105,7 +77,7 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </div>
@@ -126,10 +98,10 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-sd') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -147,7 +119,7 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </div>
@@ -168,7 +140,7 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </div>
@@ -189,7 +161,7 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-outline-warning ms-4 shadow-lg text-dark">
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </div>
@@ -197,6 +169,6 @@
         </div>
     </div>
 
-    @include('includes.footer')
+    @include('layout.footer')
 </body>
 </html>

@@ -4,6 +4,7 @@ use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SDController;
 use App\Http\Controllers\UpdateProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,10 @@ Route::controller(LoginController::class)->group(function(){
 Route::middleware('auth.check')->group(function(){ 
     Route::controller(BeasiswaController::class)->group(function(){
         Route::get('/home', 'show')->name('home');
+        Route::get('/sd', 'showSD')->name('beasiswa-sd');
+        Route::get('/smp', 'showSMP')->name('beasiswa-smp');
+        Route::get('/sma', 'showSMA')->name('beasiswa-sma');
+        Route::get('/college', 'showKuliah')->name('beasiswa-kuliah');
     });
 
     Route::controller(ChangePasswordController::class)->group(function(){

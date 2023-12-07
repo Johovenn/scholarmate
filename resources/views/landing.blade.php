@@ -33,7 +33,7 @@
             </p>
         </div>
     </div>
-    @include('includes.footer')
+    @include('layout.footer')
 
     <script src="{{ asset('js/landing.js') }}"></script>
 </body>

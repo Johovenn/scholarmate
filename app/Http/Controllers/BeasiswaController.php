@@ -26,4 +26,28 @@ class BeasiswaController extends Controller
             'beasiswaKuliah' => $beasiswaKuliah
         ]);
     }
+
+    public function showSD(){
+        $beasiswas = Beasiswa::where('type', 'SD')->get();
+
+        return view('beasiswaSD', ['beasiswas' => $beasiswas]);
+    }
+
+    public function showSMP(){
+        $beasiswas = Beasiswa::where('type', 'SMP')->get();
+
+        return view('beasiswaSMP', ['beasiswas' => $beasiswas]);
+    }
+
+    public function showSMA(){
+        $beasiswas = Beasiswa::where('type', 'SMA')->get();
+
+        return view('beasiswaSMA', ['beasiswas' => $beasiswas]);
+    }
+
+    public function showKuliah(){
+        $beasiswas = Beasiswa::where('type', 'Kuliah')->get();
+
+        return view('beasiswaKuliah', ['beasiswas' => $beasiswas]);
+    }
 }

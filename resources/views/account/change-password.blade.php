@@ -9,14 +9,14 @@
     @include('includes.icons')
 </head>
 <body class="min-vh-100 bg-dark">
-    @include('includes.back-button')
+    @include('layout.back-button')
     <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4">
         <div class="w-25 bg-light h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
             <div class="list-group p-2 w-100">
                 <a href="{{ route('account-settings') }}" class="list-group-item">Update Profile</a>
                 <a href="" class="list-group-item active">Change Password</a>
             </div>
-            @include('includes.logout-button')
+            @include('layout.logout-button')
         </div>
         <div class="w-75 bg-light p-3 rounded-2">
             <h2>Change Password</h2>
