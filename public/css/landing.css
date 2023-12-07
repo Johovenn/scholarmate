@@ -1,6 +1,14 @@
-body{
+.hero{
     background-image: url(../assets/landingBackground.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, black, transparent);
+}
+
+.navbar.scrolled{
+    background: white;
 }

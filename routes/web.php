@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -33,9 +34,9 @@ Route::controller(LoginController::class)->group(function(){
 });
 
 Route::middleware('auth.check')->group(function(){ 
-    Route::get('/home', function(){
-        return view('home');
-    })->name('home');
+    Route::controller(BeasiswaController::class)->group(function(){
+        Route::get('/home', 'show')->name('home');
+    });
 
     Route::controller(ChangePasswordController::class)->group(function(){
         Route::get('/change-password', 'index')->name('change-password');

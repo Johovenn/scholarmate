@@ -8,7 +8,7 @@
     @include('../includes/bootstrap')
     <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
-<body class="min-vh-100 d-flex flex-column justify-content-center align-items-center bg-dark">
+<body class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
     <div class="h-200 w-75 rounded d-flex" style="box-shadow : 0px 0px 0px 5px rgba(0, 0, 0, 0.1)">
         <div class="w-50 d-flex flex-column justify-content-center align-items-center px-5 py-3 bg-light rounded">
             <h3>Register</h3>
@@ -22,7 +22,7 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="beasiswa" class="form-label">Beasiswa</label>
+                    <label for="beasiswa" class="form-label">Beasiswa yang dicari : </label>
                     <select name="beasiswa" id="beasiswa" class="form-control">
                         <option value="Kuliah" {{ old('beasiswa') == 'Kuliah' ? 'selected' : '' }}>Kuliah</option>
                         <option value="SMA" {{ old('beasiswa') == 'SMA' ? 'selected' : '' }}>SMA</option>
@@ -44,13 +44,14 @@
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <div class="form-group mb-5">
+                <div class="form-group mb-3">
                     <label for="password_confirmation" class="form-label">Confirm Password</label>
                     <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror">
                     @error('password_confirmation')
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
                 </div>
+                <p>Already have an account? Login <a href="{{ route('auth.login') }}">here</a>.</p>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

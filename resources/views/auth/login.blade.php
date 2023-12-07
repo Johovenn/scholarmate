@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
 <body class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
-    <div class="h-200 w-75 rounded d-flex" style="box-shadow : 0px 0px 0px 5px rgba(0, 0, 0, 0.1)">
-        <div class="w-50 d-flex flex-column justify-content-center align-items-center px-5 py-3">
+    <div class="w-75 rounded d-flex" style="box-shadow : 0px 0px 0px 5px rgba(0, 0, 0, 0.1)">
+        <div class="w-50 d-flex flex-column justify-content-center align-items-center px-5 py-5 bg-light rounded">
             <h3>Login</h3>
             <form action="{{ route('auth.validate') }}" class="w-100" method="POST">
                 @csrf
@@ -29,6 +29,7 @@
                     <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
+                <p>Don't have an account? Register <a href="{{ route('auth.register') }}">here</a>.</p>
 
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
