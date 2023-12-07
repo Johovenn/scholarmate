@@ -21,7 +21,7 @@
                         <div class="text-danger">{{ $message }}</div>
                     @enderror
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group mb-3">   
                     <label for="beasiswa" class="form-label">Beasiswa yang dicari : </label>
                     <select name="beasiswa" id="beasiswa" class="form-control">
                         <option value="Kuliah" {{ old('beasiswa') == 'Kuliah' ? 'selected' : '' }}>Kuliah</option>
