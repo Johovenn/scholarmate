@@ -14,10 +14,14 @@ return new class extends Migration
         Schema::create('beasiswas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('location');
+            $table->string('city');
             $table->string('category');
             $table->string('type');
             $table->string('image');
+            $table->string('address');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('website');
             $table->timestamps();
         });
     }

@@ -18,15 +18,25 @@ class BeasiswaSeeder extends Seeder
         for($i = 0; $i < 50; $i++){
             $bea =  new Beasiswa();
             $bea->name = $faker->firstName() . $faker->randomElement($array = array(' School', ' University'));
-            $bea->location = $faker->randomElement($array = array('Jakarta', 'Bandung', 'Surabaya'));
+            $originalString = $bea->name;
+            $stringWithoutSpace = str_replace(' ', '', $originalString);
+            $schoolName = strtolower($stringWithoutSpace);
+
+            $bea->city = $faker->randomElement($array = array('Jakarta', 'Bandung', 'Surabaya'));
             $bea->image = $faker->randomElement($array = array('assets/school1.png', 'assets/school2.jpg'));
             $bea->category = $faker->randomElement($array = array('Beasiswa Pemerintah', 'Beasiswa Swasta', 'Beasiswa Negara Maju', 'Beasiswa Komunitas', 'Beasiswa Sekolah'));
+            
             if(strpos($bea->name, 'University')){
                 $bea->type = 'Kuliah';
             }
             else{
                 $bea->type = $faker->randomElement($array = ['SD', 'SMP', 'SMA']);
             }
+
+            $bea->address = $faker->address();
+            $bea->phone = $faker->phoneNumber();
+            $bea->email = $schoolName . '@gmail.com';
+            $bea->website = 'www.' . $schoolName . '.com';
             $bea->save();
         }
     }

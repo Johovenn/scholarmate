@@ -10,5 +10,5 @@ class Beasiswa extends Model
     use HasFactory;
 
     protected $table = 'beasiswas';
-    protected $fillable = ['name', 'location', 'category', 'type', 'image'];
+    protected $fillable = ['name', 'location', 'city', 'type', 'image', 'address', 'email', 'phone', 'website'];
 }

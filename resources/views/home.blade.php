@@ -20,7 +20,7 @@
     <hr>
 
     <div class="container position-relative">
-        <h2 class="mb-3">Welcome, {{ Auth::user()->name }}</h2>
+        <h2 class="mb-4">Welcome, {{ Auth::user()->name }}</h2>
         
         <div class="w-100 d-flex justify-content-center">
             <div id="carouselExampleCaptions" class="carousel slide mb-5">
@@ -73,8 +73,17 @@
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
                         <p class="card-text">{{ $beasiswa->category }}</p>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
-                        <a href="" class="btn btn-warning">Details</a>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <ion-icon name="pin-outline" class="me-1"></ion-icon> 
+                            <div class="">{{ $beasiswa->city }}</div>
+                        </div>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <div class="card-text d-flex align-items-center mb-3">
+                                <ion-icon name="people-circle-outline" class="me-1"></ion-icon>
+                                <div class="">{{ $beasiswa->type }}</div>
+                            </div>
+                        </div>
+                        <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
                 <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
@@ -94,8 +103,17 @@
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
                         <p class="card-text">{{ $beasiswa->category }}</p>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
-                        <a href="" class="btn btn-warning">Details</a>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <ion-icon name="pin-outline" class="me-1"></ion-icon> 
+                            <div class="">{{ $beasiswa->city }}</div>
+                        </div>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <div class="card-text d-flex align-items-center mb-3">
+                                <ion-icon name="people-circle-outline" class="me-1"></ion-icon>
+                                <div class="">{{ $beasiswa->type }}</div>
+                            </div>
+                        </div>
+                        <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
                 <a href="{{ route('beasiswa-sd') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
@@ -115,8 +133,17 @@
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
                         <p class="card-text">{{ $beasiswa->category }}</p>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
-                        <a href="" class="btn btn-warning">Details</a>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <ion-icon name="pin-outline" class="me-1"></ion-icon> 
+                            <div class="">{{ $beasiswa->city }}</div>
+                        </div>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <div class="card-text d-flex align-items-center mb-3">
+                                <ion-icon name="people-circle-outline" class="me-1"></ion-icon>
+                                <div class="">{{ $beasiswa->type }}</div>
+                            </div>
+                        </div>
+                        <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
                 <a href="{{ route('beasiswa-smp') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
@@ -136,8 +163,17 @@
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
                         <p class="card-text">{{ $beasiswa->category }}</p>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
-                        <a href="" class="btn btn-warning">Details</a>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <ion-icon name="pin-outline" class="me-1"></ion-icon> 
+                            <div class="">{{ $beasiswa->city }}</div>
+                        </div>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <div class="card-text d-flex align-items-center mb-3">
+                                <ion-icon name="people-circle-outline" class="me-1"></ion-icon>
+                                <div class="">{{ $beasiswa->type }}</div>
+                            </div>
+                        </div>
+                        <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
                 <a href="{{ route('beasiswa-sma') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
@@ -157,8 +193,17 @@
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
                         <p class="card-text">{{ $beasiswa->category }}</p>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
-                        <a href="" class="btn btn-warning">Details</a>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <ion-icon name="pin-outline" class="me-1"></ion-icon> 
+                            <div class="">{{ $beasiswa->city }}</div>
+                        </div>
+                        <div class="card-text d-flex align-items-center mb-3">
+                            <div class="card-text d-flex align-items-center mb-3">
+                                <ion-icon name="people-circle-outline" class="me-1"></ion-icon>
+                                <div class="">{{ $beasiswa->type }}</div>
+                            </div>
+                        </div>
+                        <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
                 <a href="{{ route('beasiswa-kuliah') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">

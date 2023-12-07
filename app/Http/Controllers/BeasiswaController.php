@@ -58,4 +58,10 @@ class BeasiswaController extends Controller
 
         return view('scholarships.search', ['beasiswas' => $beasiswas, 'keyword' => $keyword]);
     }
+
+    public function details($id){
+        $beasiswa = Beasiswa::where('id', $id)->first();
+
+        return view('scholarships.detail', ['beasiswa' => $beasiswa]);
+    }
 }

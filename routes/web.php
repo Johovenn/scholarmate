@@ -31,6 +31,7 @@ Route::middleware('auth.check')->group(function(){
         Route::get('/sma', 'showSMA')->name('beasiswa-sma');
         Route::get('/kuliah', 'showKuliah')->name('beasiswa-kuliah');
         Route::get('/search', 'search')->name('search');
+        Route::get('/details/{id}', 'details')->name('beasiswa-details');
     });
 
     Route::controller(ChangePasswordController::class)->group(function(){
