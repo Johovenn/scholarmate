@@ -18,17 +18,22 @@
 <body class="min-vh-100 d-flex flex-column">
     <div class="d-flex container mt-3 justify-content-between align-items-center w-100">
         <img src="{{ asset('assets/scholarmate.png') }}" width="100px" alt="">
-        {{-- <div class=''>
-            <a href="" class="d-flex align-items-center"><p>{{ Auth::user()->name }}</p><ion-icon name="person-circle-outline" size='large'></a>
-        </div> --}}
-        <div class="btn-group">
-            <button type="button" class="btn btn-warning dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                <ion-icon name="person-circle-outline" size='large'></ion-icon>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href="{{ route('account-settings') }}"><ion-icon name="settings-outline" class="me-2"></ion-icon> Account Settings</a></li>
-                <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href=""><ion-icon name="language-outline" class="me-2"></ion-icon> Language</a></li>
-            </ul>
+        <div class="d-flex align-items-center">
+            <div class="me-3">
+                <form class="d-flex" role="search" method="POST" action="">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ion-icon name="person-circle-outline" size='large'></ion-icon>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href="{{ route('account-settings') }}"><ion-icon name="settings-outline" class="me-2"></ion-icon> Account Settings</a></li>
+                    <li class="dropdown-item"><a class="text-decoration-none text-dark d-flex align-items-center" href=""><ion-icon name="language-outline" class="me-2"></ion-icon> Language</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     
