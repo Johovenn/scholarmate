@@ -119,10 +119,10 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-smp') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -140,10 +140,10 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-sma') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -161,10 +161,10 @@
                         <a href="" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-kuliah') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
-                </div>
+                </a>
             </div>
         </div>
     </div>

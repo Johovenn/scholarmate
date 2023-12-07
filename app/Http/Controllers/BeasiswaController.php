@@ -30,24 +30,24 @@ class BeasiswaController extends Controller
     public function showSD(){
         $beasiswas = Beasiswa::where('type', 'SD')->get();
 
-        return view('beasiswaSD', ['beasiswas' => $beasiswas]);
+        return view('scholarships.sd', ['beasiswas' => $beasiswas]);
     }
 
     public function showSMP(){
         $beasiswas = Beasiswa::where('type', 'SMP')->get();
 
-        return view('beasiswaSMP', ['beasiswas' => $beasiswas]);
+        return view('scholarships.smp', ['beasiswas' => $beasiswas]);
     }
 
     public function showSMA(){
         $beasiswas = Beasiswa::where('type', 'SMA')->get();
 
-        return view('beasiswaSMA', ['beasiswas' => $beasiswas]);
+        return view('scholarships.sma', ['beasiswas' => $beasiswas]);
     }
 
     public function showKuliah(){
         $beasiswas = Beasiswa::where('type', 'Kuliah')->get();
 
-        return view('beasiswaKuliah', ['beasiswas' => $beasiswas]);
+        return view('scholarships.kuliah', ['beasiswas' => $beasiswas]);
     }
 }

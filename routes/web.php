@@ -29,7 +29,7 @@ Route::middleware('auth.check')->group(function(){
         Route::get('/sd', 'showSD')->name('beasiswa-sd');
         Route::get('/smp', 'showSMP')->name('beasiswa-smp');
         Route::get('/sma', 'showSMA')->name('beasiswa-sma');
-        Route::get('/college', 'showKuliah')->name('beasiswa-kuliah');
+        Route::get('/kuliah', 'showKuliah')->name('beasiswa-kuliah');
     });
 
     Route::controller(ChangePasswordController::class)->group(function(){
