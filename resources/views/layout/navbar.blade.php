@@ -11,10 +11,10 @@
     </div>
     <div class="d-flex align-items-center">
         <div class="me-3">
-            <form class="d-flex" role="search" method="POST" action="">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" method="GET" action="{{ route('search') }}">
+                <input class="form-control me-2" name="search" id="search" type="search" placeholder="ex. Adaline Univeristy" aria-label="Search" width="800px">
                 <button class="btn btn-warning" type="submit">Search</button>
-              </form>
+            </form>
         </div>
         <div class="btn-group">
             <button type="button" class="btn btn-warning dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">

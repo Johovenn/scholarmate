@@ -50,4 +50,12 @@ class BeasiswaController extends Controller
 
         return view('scholarships.kuliah', ['beasiswas' => $beasiswas]);
     }
+
+    public function search(Request $request){
+        $keyword = $request->input('search');
+
+        $beasiswas = Beasiswa::where('name', 'LIKE', '%' . $keyword . '%')->get();
+
+        return view('scholarships.search', ['beasiswas' => $beasiswas, 'keyword' => $keyword]);
+    }
 }
