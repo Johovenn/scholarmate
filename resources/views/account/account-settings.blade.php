@@ -8,17 +8,17 @@
     @include('includes.bootstrap')
     @include('includes.icons')
 </head>
-<body class="min-vh-100 bg-dark">
+<body class="min-vh-100">
     @include('layout.back-button')
-    <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4">
-        <div class="w-25 bg-light h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
+    <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4 shadow-lg">
+        <div class="w-25 h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
             <div class="list-group p-2 w-100">
-                <a href="" class="list-group-item active">Update Profile</a>
+                <a href="" class="list-group-item bg-warning">Update Profile</a>
                 <a href="{{ route('change-password') }}" class="list-group-item">Change Password</a>
             </div>
             @include('layout.logout-button')
         </div>
-        <div class="w-75 bg-light p-3 rounded-2">
+        <div class="w-75 p-3 rounded-2">
             <h2>Update Profile</h2>
             <form action="" method="POST">
                 @csrf
@@ -39,7 +39,7 @@
                         <option value="SD" {{ Auth::user()->beasiswa == 'SD' ? 'selected' : '' }}>SD</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Update</button>
+                <button type="submit" class="btn btn-warning mt-3">Update</button>
             </form>
         </div>
     </div>

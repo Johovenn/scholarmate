@@ -7,6 +7,7 @@
     <title>ScholarMate</title>
     @include('includes.bootstrap')
     <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+    <link rel="icon" href="{{ asset('assets/scholarmateLogo.png') }}">
 </head>
 <body class="min-vh-100">
     <div class="position-fixed w-100 z-3 d-flex justify-content-between px-5 py-3 align-items-center navbar" id='navbar'>

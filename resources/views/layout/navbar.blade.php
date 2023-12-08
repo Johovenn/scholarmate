@@ -16,8 +16,7 @@
                     <li><a href="{{ route('beasiswa-kuliah') }}" class="dropdown-item">College</a></li>
                 </ul>
             </li>
-            <li class="mx-2"><a href="{{ route('home') }}" class="navbar-link text-decoration-none">About Us</a></li>
-            <li class="mx-2"><a href="{{ route('home') }}" class="navbar-link text-decoration-none">Contact Us</a></li>
+            <li class="mx-2"><a href="{{ route('about') }}" class="navbar-link text-decoration-none">About Us</a></li>
         </ul>
     </div>
     <div class="d-flex align-items-center">

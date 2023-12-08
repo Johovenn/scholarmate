@@ -43,4 +43,12 @@ Route::middleware('auth.check')->group(function(){
         Route::get('/account-settings', 'index')->name('account-settings');
         Route::post('/account-settings', 'update')->name('update-profile');
     });
+
+    Route::get('/about-us', function(){
+        return view('about');
+    })->name('about');
+
+    Route::get('/contact-us', function(){
+        return view('contact');
+    })->name('contact');
 });
