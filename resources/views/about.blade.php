@@ -19,30 +19,34 @@
                 <img src="{{ asset('assets/jojo.jpeg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Jonathan Gunawan</h5>
-                    <p class="card-text">Project Manager</p>
+                    <div class="card-text">Project Manager</div>
+                    <div class="card-text">"balapan sini dek.."</div>
                 </div>
             </div>
             <div class="card bg-warning me-5" style="width: 18rem;">
-                <img src="{{ asset('assets/snorlax.png') }}" class="card-img-top p-3 rounded-circle" alt="...">
+                <img src="{{ asset('assets/maxwell.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Maxwell Yudanegara</h5>
-                    <p class="card-text">Front-End Developer</p>
+                    <div class="card-text">Front-End Developer</div>
+                    <div class="card-text">"mahiru adalah waifuku..."</div>
                 </div>
             </div>
             <div class="card bg-warning me-5" style="width: 18rem;">
                 <img src="{{ asset('assets/kevin.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Kevin Elbert Hartono</h5>
-                    <p class="card-text">Front-End Developer</p>
+                    <div class="card-text">Front-End Developer</div>
+                    <div class="card-text">"gw tonjok vini ngentot"</div>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center mb-5">
             <div class="card bg-warning me-5" style="width: 18rem;">
-                <img src="{{ asset('assets/jojo.jpeg') }}" class="card-img-top p-3 rounded-circle" alt="...">
+                <img src="{{ asset('assets/daniel.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Daniel Haposan</h5>
-                    <p class="card-text">Back-End Developer</p>
+                    <h6 class="card-text">Back-End Developer</h6>
+                    <div class="card-text">"loli slayerr..."</div>
                 </div>
             </div>
             <div class="card bg-warning me-5" style="width: 18rem;">
