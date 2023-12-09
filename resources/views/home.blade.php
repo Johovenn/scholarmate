@@ -63,12 +63,12 @@
             </div>
         </div>
         
-        <div class="d-flex flex-column mb-5">
-            <h4>Here are scholarships based on your interest : </h4>
-            <div class="d-flex align-items-center">
+        <div class="d-flex flex-column mb-5 mx-4">
+            <h4 class>Here are scholarships based on your interest : </h4>
+            <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswas as $beasiswa)
                     <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
-                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="120px" height="120px">
                         <div class="card-top">
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
@@ -86,19 +86,19 @@
                         <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <div class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark mt-3">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
-                    <h5>See All</h5>
+                    <h5>See All </h5>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex flex-column mb-5">
+        <div class="d-flex flex-column mb-5 mx-4">
             <h4>Scholarships for Primary School : </h4>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSD as $beasiswa)
                     <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
-                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="120px" height="120px">
                         <div class="card-top">
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
@@ -116,19 +116,19 @@
                         <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <a href="{{ route('beasiswa-sd') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-sd') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark mt-3">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </a>
             </div>
         </div>
 
-        <div class="d-flex flex-column mb-5">
+        <div class="d-flex flex-column mb-5 mx-4">
             <h4>Scholarships for Junior High School :</h4>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSMP as $beasiswa)
                     <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
-                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="120px" height="120px">
                         <div class="card-top">
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
@@ -146,19 +146,19 @@
                         <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <a href="{{ route('beasiswa-smp') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-smp') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark mt-3">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </a>
             </div>
         </div>
 
-        <div class="d-flex flex-column mb-5">
+        <div class="d-flex flex-column mb-5 mx-4">
             <h4>Scholarships for Senior High School :</h4>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSMA as $beasiswa)
                     <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
-                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="120px" height="120px">
                         <div class="card-top">
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
@@ -176,19 +176,19 @@
                         <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <a href="{{ route('beasiswa-sma') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-sma') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark mt-3">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </a>
             </div>
         </div>
 
-        <div class="d-flex flex-column mb-5">
+        <div class="d-flex flex-column mb-5 mx-4">
             <h4>Scholarships for College Students :</h4>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaKuliah as $beasiswa)
                     <div class="card p-2 mx-3 mt-2 shadow-lg" style="width: 250px">
-                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="100px" height="100px">
+                        <img class="card-img-top mb-2" src="{{ $beasiswa->image }}" alt="" width="120px" height="120px">
                         <div class="card-top">
                             <h5 class="card-title">{{ $beasiswa->name }}</h5>
                         </div>
@@ -206,7 +206,7 @@
                         <a href="{{ route('beasiswa-details', ['id'=> $beasiswa->id]) }}" class="btn btn-warning">Details</a>
                     </div>
                 @endforeach
-                <a href="{{ route('beasiswa-kuliah') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark">
+                <a href="{{ route('beasiswa-kuliah') }}" class="d-flex flex-column align-items-center p-3 rounded-circle btn btn-warning ms-4 shadow-lg text-dark mt-3">
                     <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     <h5>See All</h5>
                 </a>

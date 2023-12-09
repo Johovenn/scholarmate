@@ -12,6 +12,26 @@
     @include('layout.navbar')
     <hr>
 
+    <section class="container d-flex flex-column justify-content-center align-items-center position-relative my-5 ">
+        <div class="d-flex mb-5 align-items-center">
+            <img src="{{ asset('assets/landingImage1.jpg') }}" width="500px" alt="" class="me-5 rounded">
+            <div class="">
+                <h2>What is ScholarMate?</h2>
+                <p class="">
+                    Welcome to ScholarMate, your comprehensive platform dedicated to bridging the gap between aspiring students and a world of educational possibilities in Indonesia. Whether you're a student in primary school (SD), junior high (SMP), high school (SMA), or pursuing higher education at university, ScholarMate is your go-to resource for discovering a myriad of scholarship opportunities tailored to your educational journey.
+                </p>                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="me-3 d-flex flex-column justify-content-end">
+                <h2>Why use ScholarMate?</h2>
+                <p class="text-justify">
+                    ScholarMate offers an invaluable gateway to a world of educational opportunities through its comprehensive scholarship database. By utilizing ScholarMate, individuals gain access to a rich repository of scholarship information, simplifying the pursuit of financial aid for academic endeavors. Whether you're a student aiming to explore diverse scholarship options or an educational institution seeking funding avenues, ScholarMate serves as a beacon of support and guidance. With its user-friendly interface and up-to-date resources, ScholarMate empowers users to navigate the complex landscape of scholarships effortlessly, ensuring that every aspiring learner can uncover the funding they need to pursue their educational dreams.                </p>
+            </div>
+            <img src="{{ asset('assets/landingImage2.jpg') }}" width="500px" alt="" class="me-5 rounded">
+        </div>
+    </section>
+
     <div class="container d-flex flex-column">
         <h2 class="mb-4">Who Made ScholarMate?</h2>
         <div class="d-flex justify-content-center mb-3">

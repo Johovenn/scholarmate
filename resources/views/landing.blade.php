@@ -22,12 +22,11 @@
     <div class="min-vh-100 position-relative hero">
         <div class="position-absolute top-50 translate-middle start-50 d-flex flex-column justify-content-center align-items-center">
             <h1 class="text-light mb-3" style="text-shadow: 2px 2px 4px black">Paving Paths to Scholarships for You</h1>
-            <button class="btn btn-warning">Start Now</button>
+            <a href="{{ route('auth.register') }}" class="btn btn-warning">Start Now</a>
         </div>
     </div>
 
     <section class="min-vh-100 container d-flex flex-column justify-content-center align-items-center position-relative my-5 ">
-        
         <div class="d-flex mb-5 align-items-center">
             <img src="{{ asset('assets/landingImage1.jpg') }}" width="500px" alt="" class="me-5 rounded">
             <div class="">
