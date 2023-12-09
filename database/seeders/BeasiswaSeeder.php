@@ -23,7 +23,7 @@ class BeasiswaSeeder extends Seeder
             $schoolName = strtolower($stringWithoutSpace);
 
             $bea->city = $faker->randomElement($array = array('Jakarta', 'Bandung', 'Surabaya'));
-            $bea->image = $faker->randomElement($array = array('assets/school1.png', 'assets/school2.jpg'));
+            $bea->image = $faker->randomElement($array = array('assets/school1.png', 'assets/school2.jpg', 'assets/school3.jpeg'));
             $bea->category = $faker->randomElement($array = array('Beasiswa Pemerintah', 'Beasiswa Swasta', 'Beasiswa Negara Maju', 'Beasiswa Komunitas', 'Beasiswa Sekolah'));
             
             if(strpos($bea->name, 'University')){
