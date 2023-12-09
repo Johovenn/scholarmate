@@ -7,8 +7,10 @@
 
 .navbar{
     background: linear-gradient(to bottom, black, transparent);
+    transition: 0.5s;
 }
 
 .navbar.scrolled{
     background: white;
+    transition: 0.5s;
 }

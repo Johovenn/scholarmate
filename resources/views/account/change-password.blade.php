@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Password</title> 
+    <title>Account Settings</title>
     @include('includes.bootstrap')
     @include('includes.icons')
 </head>
-<body class="min-vh-100 bg-light-emphasis">
-    @include('layout.back-button')
-    <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4 shadow-lg">
-        <div class="w-25 h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
+<body class="min-vh-100 d-flex flex-column position-relative">
+    @include('layout.navbar')
+    <hr>
+    <div class="container d-flex justify-content-center shadow mb-5 border rounded mt-5" style="height: 600px">
+        <div class="h-100 w-25 d-flex flex-column justify-content-between align-items-center rounded-2">
             <div class="list-group p-2 w-100">
                 <a href="{{ route('account-settings') }}" class="list-group-item">Update Profile</a>
-                <a href="" class="list-group-item bg-warning">Change Password</a>
+                <a href="{{ route('change-password') }}" class="list-group-item bg-warning">Change Password</a>
             </div>
             @include('layout.logout-button')
         </div>
@@ -42,5 +43,7 @@
             </form>
         </div>
     </div>
+
+    @include('layout.footer')
 </body>
 </html>

@@ -8,10 +8,11 @@
     @include('includes.bootstrap')
     @include('includes.icons')
 </head>
-<body class="min-vh-100">
-    @include('layout.back-button')
-    <div class="container d-flex position-absolute top-50 start-50 translate-middle h-75 rounded-4 shadow-lg">
-        <div class="w-25 h-100 d-flex flex-column justify-content-between align-items-center rounded-2">
+<body class="min-vh-100 d-flex flex-column position-relative">
+    @include('layout.navbar')
+    <hr>
+    <div class="container d-flex justify-content-center shadow mb-5 mt-5" style="height: 600px">
+        <div class="h-100 w-25 d-flex flex-column justify-content-between align-items-center rounded-2 ">
             <div class="list-group p-2 w-100">
                 <a href="" class="list-group-item bg-warning">Update Profile</a>
                 <a href="{{ route('change-password') }}" class="list-group-item">Change Password</a>
@@ -43,5 +44,7 @@
             </form>
         </div>
     </div>
+
+    @include('layout.footer')
 </body>
 </html>

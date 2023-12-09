@@ -19,7 +19,7 @@
                 <img src="{{ asset('assets/jojo.jpeg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Jonathan Gunawan</h5>
-                    <div class="card-text">Project Manager</div>
+                    <h6 class="card-text">Project Manager</h6>
                     <div class="card-text">"balapan sini dek.."</div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <img src="{{ asset('assets/maxwell.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Maxwell Yudanegara</h5>
-                    <div class="card-text">Front-End Developer</div>
+                    <h6 class="card-text">Front-End Developer</h6>
                     <div class="card-text">"mahiru adalah waifuku..."</div>
                 </div>
             </div>
@@ -35,8 +35,8 @@
                 <img src="{{ asset('assets/kevin.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Kevin Elbert Hartono</h5>
-                    <div class="card-text">Front-End Developer</div>
-                    <div class="card-text">"gw tonjok vini ngentot"</div>
+                    <h6 class="card-text">Front-End Developer</h6>
+                    <div class="card-text">"u mau dibeli papi i?"</div>
                 </div>
             </div>
         </div>
@@ -46,21 +46,23 @@
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Daniel Haposan</h5>
                     <h6 class="card-text">Back-End Developer</h6>
-                    <div class="card-text">"loli slayerr..."</div>
+                    <div class="card-text">"pasukan loli 1"</div>
                 </div>
             </div>
             <div class="card bg-warning me-5" style="width: 18rem;">
                 <img src="{{ asset('assets/farel.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Farel Akbar</h5>
-                    <p class="card-text">Back-End Developer</p>
+                    <h6 class="card-text">Back-End Developer</h6>
+                    <div class="card-text">"pasukan loli 2"</div>
                 </div>
             </div>
             <div class="card bg-warning me-5" style="width: 18rem;">
-                <img src="{{ asset('assets/jojo.jpeg') }}" class="card-img-top p-3 rounded-circle" alt="...">
+                <img src="{{ asset('assets/jakholius.jpg') }}" class="card-img-top p-3 rounded-circle" alt="...">
                 <div class="card-body d-flex flex-column align-items-center">
                     <h5 class="card-title">Jakholius</h5>
-                    <p class="card-text">Database Engineer</p>
+                    <h6 class="card-text">Database Engineer</h6>
+                    <div class="card-text">"pasukan loli 3"</div>
                 </div>
             </div>
         </div>

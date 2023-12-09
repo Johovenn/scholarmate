@@ -45,10 +45,11 @@
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <ion-icon name="globe-outline" size='large' class="me-2"></ion-icon>
-                        <div>{{ $beasiswa->website }}</div>
+                        <a target='_blank' href="https://{{ $beasiswa->website }}">{{ $beasiswa->website }}</a>
                     </div>
                 </div>
             </div>
+            <p>For further information, please visit the official website <a target='_blank' href="{{ $beasiswa->website }}">here</a>.</p>
         </div>
     </div>
 
