@@ -11,7 +11,7 @@
 <body class="min-vh-100 d-flex flex-column position-relative">
     @include('layout.navbar')
     <hr>
-    <div class="container d-flex justify-content-center shadow mb-5 mt-5" style="height: 600px">
+    <div class="container d-flex justify-content-center shadow mb-5 mt-3" style="height: 600px">
         <div class="h-100 w-25 d-flex flex-column justify-content-between align-items-center rounded-2 ">
             <div class="list-group p-2 w-100">
                 <a href="" class="list-group-item bg-warning">Update Profile</a>

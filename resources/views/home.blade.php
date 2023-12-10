@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ScholarMate</title>
-    
     @include('includes.bootstrap')
     @include('includes.icons')
 </head>
-<style>
-    .carousel{
-        max-width: 600px;
-        max-height: 400px;
-    }
-</style>
 <body class="min-vh-100 d-flex flex-column">
     @include('layout.navbar')
     <hr>
-
     <div class="container position-relative">
         <h2 class="mb-4">Welcome, {{ Auth::user()->name }}</h2>
         
@@ -130,5 +122,12 @@
     </div>
 
     @include('layout.footer')
+
+    <style>
+        .carousel{
+            max-width: 600px;
+            max-height: 400px;
+        }
+    </style>
 </body>
 </html>

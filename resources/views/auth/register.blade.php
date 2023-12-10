@@ -52,7 +52,7 @@
                     @enderror
                 </div>
                 <p>Already have an account? Login <a href="{{ route('auth.login') }}">here</a>.</p>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-warning">Submit</button>
             </form>
         </div>
         <div class="w-50 register-image rounded-end"></div>

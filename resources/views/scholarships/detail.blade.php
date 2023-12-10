@@ -52,8 +52,6 @@
             <p>For further information, please visit the official website <a target='_blank' href="{{ $beasiswa->website }}">here</a>.</p>
         </div>
     </div>
-
-
     @include('layout.footer')
 </body>
 </html>

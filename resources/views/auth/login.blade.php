@@ -26,12 +26,12 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control mb-2 @error('password') is-invalid @enderror" name="password" id="password">
                     @error('password')
-                    <p class="text-danger">{{ $message }}</p>
+                <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
                 <p>Don't have an account? Register <a href="{{ route('auth.register') }}">here</a>.</p>
-
-                <button type="submit" class="btn btn-primary">Login</button>
+ 
+                <button type="submit" class="btn btn-warning">Login</button>
             </form>
         </div>
         <div class="w-50 login-image rounded-end"></div>
