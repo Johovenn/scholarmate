@@ -3,10 +3,6 @@
         <img src="{{ asset('assets/scholarmate.png') }}" width="100px" alt="">
         <ul class="d-flex mt-3" style="list-style: none;">
             <li class="mx-2"><a href="{{ route('home') }}" class="navbar-link text-decoration-none">Home</a></li>
-            {{-- <li class="mx-2"><a href="{{ route('beasiswa-sd') }}" class="navbar-link text-decoration-none">Beasiswa SD</a></li>
-            <li class="mx-2"><a href="{{ route('beasiswa-smp') }}" class="navbar-link text-decoration-none">Beasiswa SMP</a></li>
-            <li class="mx-2"><a href="{{ route('beasiswa-sma') }}" class="navbar-link text-decoration-none">Beasiswa SMA</a></li>
-            <li class="mx-2"><a href="{{ route('beasiswa-kuliah') }}" class="navbar-link text-decoration-none">Beasiswa Kuliah</a></li> --}}
             <li class="mx-2 dropdown">
                 <a href="" class="dropdown-toggle text-decoration-none navbar-link d-flex align-items-center" role="button" data-bs-toggle="dropdown">Scholarships</a>
                 <ul class="dropdown-menu">
