@@ -21,7 +21,7 @@
     
     <div class="min-vh-100 position-relative hero">
         <div class="position-absolute top-50 translate-middle start-50 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-light mb-3" style="text-shadow: 2px 2px 4px black">Paving Paths to Scholarships for You</h1>
+            <h1 class="text-light mb-3" style="text-shadow: 2px 2px 4px black">{{ __('messages.welcome') }}</h1>
             <a href="{{ route('auth.register') }}" class="btn btn-warning">Start Now</a>
         </div>
     </div>

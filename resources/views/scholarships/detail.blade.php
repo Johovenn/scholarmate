@@ -14,7 +14,7 @@
 
     <div class="container d-flex justify-content-start">
         <div class="me-5">
-            <img src="{{ asset('assets/school2.jpg') }}" alt="School Image" width="500 px">    
+            <img src="{{ asset('assets/school5.jpeg') }}" alt="School Image" width="500 px">    
         </div>
         <div class="d-flex flex-column">
             <h2>{{ $beasiswa->name }}</h2>

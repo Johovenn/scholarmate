@@ -12,7 +12,7 @@
     @include('layout.navbar')
     <hr>
     <div class="container position-relative">
-        <h2 class="mb-4">Welcome, {{ Auth::user()->name }}</h2>
+        <h2 class="mb-4">{{ __('home.welcome', ['name' => $userName]) }}</h2>
         
         <div class="w-100 d-flex justify-content-center">
             <div id="carouselExampleCaptions" class="carousel slide mb-5">
@@ -25,21 +25,21 @@
                     <div class="carousel-item active">
                         <img src="{{ asset('assets/carousel1.jpg') }}" class="d-block w-100 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block shadow-sm">
-                            <h5>Create Wonderful Memories</h5>
+                            <h5>{{ __('home.carousel1') }}</h5>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="{{ asset('assets/carousel2.jpg') }}" class="d-block w-100 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Graduate from Your Dream University</h5>
+                            <h5>{{ __('home.carousel2') }}</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="{{ asset('assets/carousel3.jpg') }}" class="d-block w-100 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Get Unlimited Resource of Knowledge</h5>
+                            <h5>{{ __('home.carousel3') }}</h5>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
         </div>
         
         <div class="d-flex flex-column mb-5 mx-4">
-            <h4 class>Here are scholarships based on your interest : </h4>
+            <h4>{{ __('home.title1') }}</h4>
             <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswas as $beasiswa)
                     @include('layout.card')
@@ -69,7 +69,7 @@
         </div>
 
         <div class="d-flex flex-column mb-5 mx-4">
-            <h4>Scholarships for Primary School : </h4>
+            <h4>{{ __('home.title2') }}</h4>
             <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSD as $beasiswa)
                     @include('layout.card')
@@ -82,7 +82,7 @@
         </div>
 
         <div class="d-flex flex-column mb-5 mx-4">
-            <h4>Scholarships for Junior High School :</h4>
+            <h4>{{ __('home.title3') }}</h4>
             <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSMP as $beasiswa)
                     @include('layout.card')
@@ -95,7 +95,7 @@
         </div>
 
         <div class="d-flex flex-column mb-5 mx-4">
-            <h4>Scholarships for Senior High School :</h4>
+            <h4>{{ __('home.title4') }}</h4>
             <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaSMA as $beasiswa)
                     @include('layout.card')
@@ -108,7 +108,7 @@
         </div>
 
         <div class="d-flex flex-column mb-5 mx-4">
-            <h4>Scholarships for College Students :</h4>
+            <h4>{{ __('home.title5') }}</h4>
             <div class="d-flex align-items-center flex-direction-row flex-wrap justify-content-around">
                 @foreach ($beasiswaKuliah as $beasiswa)
                     @include('layout.card')

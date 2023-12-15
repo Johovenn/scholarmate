@@ -14,7 +14,7 @@ class UpdateProfileController extends Controller
 
     public function update(Request $request){
         $validateData = $request->validate([
-            'name' => 'required',
+            'name' => 'required|alpha',
             'email' => 'required|email',
             'beasiswa' => 'required',
         ]);

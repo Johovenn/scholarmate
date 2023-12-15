@@ -11,6 +11,7 @@ class BeasiswaController extends Controller
     public function show(){
         $preferredCategory = Auth::user()->beasiswa;
 
+        $userName = Auth::user()->name;
         $beasiswaList = Beasiswa::where('type', $preferredCategory)->take(4)->get();
         $beasiswaSD = Beasiswa::where('type', 'SD')->take(4)->get();
         $beasiswaSMP = Beasiswa::where('type', 'SMP')->take(4)->get();
@@ -23,7 +24,9 @@ class BeasiswaController extends Controller
             'beasiswaSD' => $beasiswaSD,
             'beasiswaSMP' => $beasiswaSMP,
             'beasiswaSMA' => $beasiswaSMA,
-            'beasiswaKuliah' => $beasiswaKuliah
+            'beasiswaKuliah' => $beasiswaKuliah,
+            'userName' => $userName,
+            
         ]);
     }
 
