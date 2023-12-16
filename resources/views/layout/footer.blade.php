@@ -15,7 +15,7 @@
     </div>
     <div class="w-50 d-flex justify-content-center"><div>© Web Programming 2023 | All Rights Reserved</div></div>
     <div class="d-flex flex-column">
-        <p>Visit our social media : </p>
+        <p>{{ __('landing.footer') }}</p>
         <div class="d-flex">
             <a class="text-light" target="_blank" href="https://www.instagram.com/myuda12"><ion-icon class="me-3" size='large' name="logo-instagram"></ion-icon></a>
             <a class="text-light" target="_blank" href="https://www.twitter.com/"><ion-icon class="me-3" size='large' name="logo-twitter"></ion-icon></a>
